@@ -33,6 +33,7 @@ namespace GestionaireEtudiant
     {
         DataClasses1DataContext db = new DataClasses1DataContext();
         private Filiere selectedFiliere;
+
         private void ChargerFilières()
         {
             var fil = from x in db.Filiere select x;
