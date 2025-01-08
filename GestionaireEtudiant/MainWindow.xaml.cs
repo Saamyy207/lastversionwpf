@@ -26,6 +26,8 @@ namespace GestionaireEtudiant
             InitializeComponent();
             // Default View
             MainContent.Content = new GesitionEtudiant();
+            // MainContent.Content = new GestionFiliere();
+
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -42,7 +44,12 @@ namespace GestionaireEtudiant
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            //var window = new 
+            MainContent.Content = new GestionFiliere();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = new Stats();
         }
     }
 }

@@ -78,7 +78,7 @@
                     </StackPanel>
                 </Button>
 
-                <Button Style="{StaticResource TabButtonStyle}"  HorizontalAlignment="Stretch">
+                <Button Style="{StaticResource TabButtonStyle}"  HorizontalAlignment="Stretch" Click="Button_Click_3">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="./icons/statistics.png" Width="20" Height="20"/>
                         <TextBlock Text="Statistiques" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
