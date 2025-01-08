@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="db_ab1607_projetwpf" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=SQL1001.site4now.net;Initial Catalog=db_ab1607_projetwpf;User ID=db_ab1607_projetwpf_admin;Trust Server Certificate=True" SettingsObjectName="GestionaireEtudiant.Properties.Settings" SettingsPropertyName="db_ab1607_projetwpfConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Etudiant" Member="Etudiant">
+    <Type Name="Etudiant">
+      <Column Name="Prenom" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Date_Naissance" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Genre" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ID_Filiere" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Annee_Inscription" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Telephone" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Adresse" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Heures_Absence" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Absences_Justifiees" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Photo" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Cne" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Filiere_Etudiant" Member="Filiere" ThisKey="ID_Filiere" OtherKey="id" Type="Filiere" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Filiere" Member="Filiere">
+    <Type Name="Filiere">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nom_filiere" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="responsable_filiere" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="nombre_etudiants" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Filiere_Etudiant" Member="Etudiant" ThisKey="id" OtherKey="ID_Filiere" Type="Etudiant" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="Users">
+      <Column Name="id_user" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="password" Type="System.Data.Linq.Binary" DbType="VarBinary(64) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="firstname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lastname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
