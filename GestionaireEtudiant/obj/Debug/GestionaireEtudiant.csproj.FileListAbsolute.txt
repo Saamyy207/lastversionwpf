@@ -50,3 +50,11 @@ C:\Users\USER\Desktop\Projet-wpf\GestionaireEtudiant\obj\Debug\Login.g.cs
 C:\Users\USER\Desktop\Projet-wpf\GestionaireEtudiant\obj\Debug\Login.baml
 C:\Users\USER\Desktop\Projet-wpf\GestionaireEtudiant\obj\Debug\GestionFiliere.g.cs
 C:\Users\USER\Desktop\Projet-wpf\GestionaireEtudiant\obj\Debug\GestionFiliere.baml
+C:\Users\brahim\Desktop\last_v_wpf\lastversionwpf\GestionaireEtudiant\obj\Debug\GestionaireEtudiant.csproj.AssemblyReference.cache
+C:\Users\brahim\Desktop\last_v_wpf\lastversionwpf\GestionaireEtudiant\obj\Debug\GesitionEtudiant.g.cs
+C:\Users\brahim\Desktop\last_v_wpf\lastversionwpf\GestionaireEtudiant\obj\Debug\GestionFiliere.g.cs
+C:\Users\brahim\Desktop\last_v_wpf\lastversionwpf\GestionaireEtudiant\obj\Debug\Login.g.cs
+C:\Users\brahim\Desktop\last_v_wpf\lastversionwpf\GestionaireEtudiant\obj\Debug\MainWindow.g.cs
+C:\Users\brahim\Desktop\last_v_wpf\lastversionwpf\GestionaireEtudiant\obj\Debug\App.g.cs
+C:\Users\brahim\Desktop\last_v_wpf\lastversionwpf\GestionaireEtudiant\obj\Debug\GestionaireEtudiant_MarkupCompile.cache
+C:\Users\brahim\Desktop\last_v_wpf\lastversionwpf\GestionaireEtudiant\obj\Debug\GestionaireEtudiant_MarkupCompile.lref

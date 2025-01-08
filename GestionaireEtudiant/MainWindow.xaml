@@ -71,7 +71,7 @@
                     </StackPanel>
                 </Button>
 
-                <Button Style="{StaticResource TabButtonStyle}"  HorizontalAlignment="Stretch">
+                <Button Style="{StaticResource TabButtonStyle}"  HorizontalAlignment="Stretch" Click="Button_Click_2">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="./icons/ff.png" Width="20" Height="20"/>
                         <TextBlock Text="Gestion des Filières" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
@@ -93,8 +93,10 @@
                 </Button>
             </StackPanel>
 
-
-
+            <ContentControl x:Name="MainContent">
+                
+            </ContentControl>
+            
 
             <ContentControl x:Name="TabContent" DockPanel.Dock="Right"/>
         </DockPanel>
